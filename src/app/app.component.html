@@ -1,0 +1,18 @@
+<header>
+	<div class="row">
+		<div class="col-xs-3" [style.visibility]="backBtnVisibility"><img (click)="goBack()" class="link" src="./assets/cuts/ic_webBack@2x.png" alt="Back button"></div>
+		<div class="col-xs-6"><h1 class="text-center">{{ title }}</h1></div>
+		<div class="col-xs-3"><img class="pull-right" src="./assets/cuts/icon_map@2x.png" alt=""></div>
+	</div>
+</header>
+<router-outlet></router-outlet>
+<footer class="visible-xs">
+	<div class="row">
+		<div class="col-xs-6 text-center">
+			<a routerLink="/restaurants" routerLinkActive="active"><img src="./assets/cuts/tab_lunch@2x.png" alt="" /><br>lunch</a>
+		</div>
+		<div class="col-xs-6 text-center">
+			<a routerLink="/internets" routerLinkActive="active"><img src="./assets/cuts/tab_internets@2x.png" alt="" /><br>internets</a>
+		</div>
+	</div>
+</footer>

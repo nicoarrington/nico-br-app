@@ -1,0 +1,22 @@
+<div *ngIf="restaurant" class="animated fadeInLeft">
+     <agm-map
+          [latitude]="restaurant.location.lat"
+          [longitude]="restaurant.location.lng"
+          [zoom] = "15"
+          [zoomControl]="false"
+          [disableDefaultUI]="true">
+          <agm-marker
+               [latitude]="restaurant.location.lat"
+               [longitude]="restaurant.location.lng">
+          </agm-marker>
+     </agm-map>
+     <div class="detail-header">
+          <h2 class="detail-name">{{restaurant.name}}</h2>
+          <span class="detail-cat">{{restaurant.category}}</span>
+     </div>
+     <div class="detail-info">
+          <div class="detail-address">{{ restaurant.location.address }} <br> {{ restaurant.location.city }}, {{ restaurant.location.state }} {{ restaurant.location.postalCode }}</div>
+          <div *ngIf="restaurant.contact" class="detail-phone-number">{{ restaurant.contact.formattedPhone }} </div>
+          <div *ngIf="restaurant.contact && restaurant.contact.twitter" class="detail-twitter-handle">@{{restaurant.contact.twitter}}</div>
+     </div>
+</div>

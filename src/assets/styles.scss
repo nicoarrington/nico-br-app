@@ -1,0 +1,97 @@
+/*Variables*/
+$primary-bg-color: #43E895; 
+$primary-light-tx-color: #fff; 
+$primary-dark-tx-color: #fff; 
+
+/*Global Component*/
+body h1 {
+	color: $primary-light-tx-color;
+	font-size: 17px; 
+	line-height: 0;
+}
+.col-sm-6.col-xs-12 {
+	padding: 0;
+}
+.link {
+	cursor: pointer;
+}
+header {
+	background-color: #43E895; 
+	padding: 24px 12px 6px;	
+	img {
+		height: 40px;
+	}
+}
+footer {
+	background: #2A2A2A; 
+	color: $primary-light-tx-color;
+	padding: 10px 0; 
+	a {
+		color: $primary-light-tx-color;
+		opacity: .6;  
+	}
+	a.active, a:focus, a:hover {
+		color: $primary-light-tx-color;
+		cursor: pointer; 
+		opacity: 1;
+		text-decoration: none; 
+	}
+	img {
+		height: 30px; 
+	}
+
+}
+/*List Component*/
+.list-info {
+	background: url("/assets/cuts/cellGradientBackground@2x.png") bottom repeat-x; 
+	color: $primary-light-tx-color;
+	height:100%; 
+	padding: 12px 6px; 
+	position: absolute; 
+	width: 100%; 
+}
+.list-name {
+	bottom: 18px;
+	font-size: 16px; 
+	margin: 0 0 6px 0; 
+	position: absolute; 
+}
+.list-cat {
+	bottom: 6px;
+	font-size: 12px; 
+	margin: 0; 
+	position: absolute; 
+}
+.list-section {
+	position: relative; 
+	width: 100%;
+}
+.list-img {
+	width: 100%;
+}
+/*Detail Component*/
+agm-map {
+	height: 180px;
+}
+.detail-header {
+	background-color: #34B379; 
+	color: $primary-light-tx-color;
+	height: 60px; 
+}
+.detail-name {
+	font-size: 16px; 
+	margin: 0 0 6px 0; 
+	padding: 12px 12px 0px 12px; 
+}
+.detail-cat {
+	font-size: 12px; 
+	margin: 0; 
+	padding: 0px 12px 12px 12px;
+}
+.detail-info {
+	font-size: 16px; 
+	padding: 16px 12px;
+	.detail-address, .detail-phone-number {
+		margin-bottom: 26px;
+	}
+}

@@ -1,0 +1,8 @@
+<div *ngFor="let restaurant of restaurants" class="col-sm-6 col-xs-12 list-section link" (click)="gotoDetail(restaurant)">
+  <div class="list-info">
+    <h2 class="list-name">{{ restaurant.name }}</h2>
+    <span class="list-cat"> {{ restaurant.category }} </span>
+  </div>
+  <img class="list-img img-responsive" src="{{ restaurant.backgroundImageURL }}" alt="{{ restaurant.name }}">
+</div>
+<div class="clearfix"></div>
